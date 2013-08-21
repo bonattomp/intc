@@ -1,0 +1,24 @@
+body{
+	background-image: url(../images/inc_home_bg.jpg);
+	background-repeat: repeat-x;
+	margin: auto;
+}
+
+#top{
+	background-image: url(../images/inc_home_topbg.jpg);
+	height: 30px;
+}
+.textSigup{
+	color: white;
+	font: 0.75em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.menu_bg{
+	background-image: url(../images/inc_home_menubg.jpg);
+	height: 744px;
+	background-repeat: repeat-x;
+}
+.nav_tex{
+	color: #ca1c25;
+	font: 0.75em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,122 @@
+
+#topo {
+    background-color: #4F6525;
+    background-repeat: repeat-x;
+    height: 126px;
+}
+#logo {
+    float: left;
+}
+#mountain {
+    float: right;
+}
+div.top > img {
+    float: left;
+    margin: 0 10px;
+}
+div.top {
+    background-color: #4F6525;
+    padding: 0%;
+    border: 1px solid #4F6525;
+}
+div.boxes {
+    border: 1px solid #DBD8D3;
+    margin: 0 0 20px;
+    max-width: 380px;
+    min-width: 100px;
+    width: 380px;
+}
+.bottom input, div.bottom textarea {
+    margin: 0 0 0 8px;
+    width: 67%;
+}
+.bottom {
+    padding: 6% 6% 12%;
+}
+.bottom ul {
+    margin: 5px 0 10px;
+}
+
+div.bottom {
+    padding: 3% 5% 1% 0px;
+}
+
+div#leftColumn {
+    float: left;
+    padding: 3% 0 0 16%;
+}
+div#rightColumn {
+    float: right;
+    padding: 3% 16% 0 0;
+}
+
+div#dadosGeo p.textoBox {
+    width: 22%;
+}
+
+p.textoBox {
+    text-align: right;
+}
+.bottom input[type="radio"] {
+    width: 15px;
+    float:right;
+}
+input.tecAscensaoCheckbox {
+    float:left;
+    width: 12%;
+}
+ul.tecAscensaoUl {
+    padding:0;
+}
+
+div#coodBase {
+    border: 1px solid #DBD8D3;
+    margin: -10px 0 10px 15px;
+    padding: 0 0 4%;
+    width: 96%;
+}
+.textoBase {
+    background: none repeat scroll 0 0 #F5F4F0;
+    font: 12px trebuchet ms;
+    margin: -9px 0 4px 9px;
+    width: 118px;
+}
+select#anoDaConquista {
+    margin: 0 55% 0 0;
+}
+#materialSugeridoQuantidade {
+}
+input#materialSugeridoNome {
+	width:44%;
+}
+div.noBorder {
+	border:0;
+}
+div#captcha {
+	text-align:right;
+}
+div#captcha textarea {
+	width:50%;
+}
+div#fonte input {
+	width:82%;
+}
+div#basicInfo input, div#basicInfo textarea {
+    vertical-align: top;
+    width: 77%;
+}
+.labelGraduacao {
+    padding: 0;
+    width: 40%;
+}
+.labels {
+    float: left;
+    text-align: right;
+}
+div#graduacao input {
+    width: 40%;
+}
+#extensao {
+    margin-bottom: 7%;
+    
+}

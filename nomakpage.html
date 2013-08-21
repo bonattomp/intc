@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Kamon! Cadastro</title>
+	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen and (max-width:400px)" href="css/cadastro_small.css">
+    <link rel="stylesheet" media="screen and (min-width:400px)" type="text/css" href="css/cadastro.css">
+	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+	<script src="js/jquery-1.9.1.js"></script>
+ 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript">
+	$(function(){
+			$(".spinner").spinner();
+			});
+	</script>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->	
+  </head>
+  <body>
+  		<div id="topo"> 
+			 <img id="logo" src="img/k.jpg" alt="" /> 
+			 <img id="mountain" src="img/mountain.jpg" /> 
+		</div>
+
+	<div id="formComplete">	
+		<div id="leftColumn">
+          <div id="basicInfo" class="boxes">
+            <div class="top">
+              <img alt="icon" />
+              <p class="tituloBox">Informações Básicas</p>
+            </div>
+    		  <div class="bottom">
+    		  	   <ul><p class="textoBox">Nome: <input type="text" name="nome"/></p></ul>
+    			   <ul><p class="textoBox">Descrição:<textarea name="descricao"></textarea></p></ul>
+    		  </div>
+          </div>
+		  <div id="graduacao" class="boxes">
+            <div class="top">
+              <img alt="icon" />
+              <p class="tituloBox">Graduação</p>
+            </div>
+    		  <div class="bottom">
+    		  	   <ul class="textoBox"><label class="labelGraduacao labels" >Grau geral da via</label> <input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11" > <label id="grauGeralValue" >7</label> </ul>
+    			   <ul class="textoBox"><label class="labelGraduacao labels">Grau do crux </label> <input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" > VIsup</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Grau do artificial</label> <input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue" >A4+</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Artificial em Livre</label> <input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue" >Xa</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels" >Grau de exposição</label> <input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequÃªncias graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue" >E5</label></span></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Grau de duração</label> <input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" >VIsup</label></ul>
+    		  </div>
+          </div>
+
+		    <div id="dadosGeo" class="boxes">
+    		  	  <div class="top">
+    			    <img alt="icon" />
+    				<p class="tituloBox">Dados geograficos</p>
+		   			</div>
+
+    		    <div class="bottom">
+    			  <ul id="extensao" ><p class="textoBox labels">Extensão: </p><input class="spinner" type="text" />metros </ul>
+    			  <div id="coodBase">
+    				  <p class="textoBase">Coordenadas da Base</p> 
+				  	 <ul><p class="textoBox labels">Latitude: </p><input type="text" name="" /> </ul>
+				  	 <ul><p class="textoBox labels">Longetude:</p> <input type="text" name="" /> </ul>
+				  	 <ul><p class="textoBox labels">Altitude: </p><input class="spinner" type="text"/>metros</ul>
+    			  </div>
+    				  
+    			  <ul><p class="textoBox labels">Cidade: </p><input type="text" name="nome"/></ul>
+    			  <ul><p class="textoBox labels">Montanha: </p><input type="text" name="" /></ul>
+    			  <ul><p class="textoBox labels">Face: </p><input type="text" name="" /></ul>
+		  </div>
+		  </div>
+        </div>
+		<div id="rightColumn">  
+		  <div id="matSuggest" class="boxes">
+            <div class="top">
+              <img alt="icon" />
+              <p class="tituloBox">Material Sugerido</p>
+            </div>
+    		  <div class="bottom">
+    		  	   <ul id="materialSugeridoQuantidade"><p class="textoBox labels">Quantidade:</p><input class="spinner" type="text"/>
+    			   <p class="textoBox labels">Nome:</p> <input type="text" name="nome" id="materialSugeridoNome"/> </ul>
+    		  </div>
+          </div>
+		<div id="conquista" class="boxes">
+            <div class="top">
+            	 <img alt="icon" />
+            	 <p class="tituloBox">Conquista</p>
+            </div>
+    		  <div class="bottom">
+			  	   <ul><p class="textoBox">Conquistadores: <input type="text" name="nome"/></p> </ul>
+    		  	   <ul><p class="textoBox">Ano da conquista: <select id="anoDaConquista" name="" size="1"> <option selected value=""></option></select></p></ul>
+    			   <ul><p class="textoBox">Clube: <input type="text" name="nome"/></p> </ul>
+    		  </div>
+          </div>
+
+		  <div id="tecAscensao" class="boxes">
+		  	   <div class="top">
+			   		<img alt="icon" />
+			    	<p class="tituloBox">Técnicas de Ascensão</p>
+			   </div>
+			   <div class="bottom">
+			   		<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="agarra" class="tecAscensaoCheckbox" /> Agarra<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="oposicao" class="tecAscensaoCheckbox"/> Oposiçãoo<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="entalamento" class="tecAscensaoCheckbox"/> Entalamento<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="chamine" class="tecAscensaoCheckbox"/> Chaminé<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="diedro" class="tecAscensaoCheckbox"/> Diedro<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="aderencia" class="tecAscensaoCheckbox"/> Aderência<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="teto" class="tecAscensaoCheckbox"/> Teto<input type="radio" name="predominante" value=""></p></ul>
+			   </div>
+
+		  </div>
+		  <div id="fonte" class="boxes noBorder">
+		  	<p class="textoBox">Fonte: <input type="text" /></p>
+		  </div>
+		  <div id="captcha" class="boxes noBorder">
+		  	<img src="" alt="captcha" />
+		  	<textarea></textarea>
+		  </div>  
+	   </div>
+   
+ </div>
+ 	<footer class="textoFooter">
+ 		 <div>
+  		 	 <span id="kamon">Kamon</span>
+			 <span id="links">
+    		 <a href="#" class="textoFooter">Home</a>|
+    		 <a href="#" class="textoFooter">Quem Somos</a>|
+    		 <a href="#" class="textoFooter">Cadastro</a>|
+    		 <a href="#" class="textoFooter">Pesquisar</a>
+			 </span>
+		 </div>
+
+
+
+</footer>	
+
+  </body>
+
+
+
+  
+</html>
