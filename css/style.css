@@ -11,37 +11,44 @@ body{
 .textSigup{
 	color: white;
 	font: 0.75em Verdana, Geneva, Arial, Helvetica, sans-serif;
-}
-.menu_bg{
-	background-image: url(../images/inc_home_menubg.jpg);
-	height: 744px;
-	background-repeat: repeat-x;
-}
-.nav_text_aling{
-	color: #ca1c25;
-	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
-	margin-top: 4%;
+	margin-top: 7px;
 	text-decoration:none;
 }
-a.nav_textFont:link{
-	color: #CA1C25;
+a.textSigup:visited {
+    color: white;
+    margin-top: 7px;
+	text-decoration: none;
+  }
+a.textSigup:hover {
+	color: white;
+	text-decoration: underline;
+}
+.navText{
+	color: red;
 	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
-	margin-top: 4%;
-	text-decoration: none;
+	margin-top: 30px;
+	text-decoration:none;
+	text-align: left;
 }
-a:visited {
-	color: #CA1C25;
-	text-decoration: none;
+a.navText:link {
+	color: red;
+	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-top: 30px;
+	text-decoration:none;
+ }
+a.navText:visited {
+	color: red;
+	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-top: 30px;
+	text-decoration:none;
+  }
+a.navText:hover {
+	color: red;
+	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-top: 30px;
+	text-decoration:none;
 }
-a.nav_textFont:hover{
-	color: #CA1C25;
-	text-decoration: none;
-}
-a.nav_textFont:active{
-	color: #CA1C25;
-	text-decoration: none;
-}
-#page-wrap {
- max-width: 200px;
- margin: 0 auto;
+#menuBg{
+	background-image: url(../images/inc_home_menubg.jpg);
+	height: 77px;
 }
