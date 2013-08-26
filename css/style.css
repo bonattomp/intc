@@ -5,7 +5,8 @@ body {
 }
 
 #top {
-	background-image: url(../images/inc_home_topbg.jpg);
+	background-image: url("../images/inc_home_topbg.jpg");
+	background-size: 100%;
 	height: 30px;
 }
 .textSigup {
@@ -61,15 +62,19 @@ a.navText:hover {
 	background-image: url("../images/banner/inc_banner.jpg");
 	background-size: 100%;
 }
-#ad_content {
-	float: right;
-	margin: 54% 0% 0% 0%;
+#home_boxes {
+	/* float: right; */
+	margin: 33% 0% 0% 0%;
+	/* display: block; */
+	/* position: relative; */
+	/* clear: both; */
+	background-color: pink;
 }
-.ad_product{
-
-}
-	
-	
+.ad_box {
+    border: 1px solid #A7A9AC;
+    max-height: 292px;
+    max-width: 203px;
+}   
 .content_box_shadow {
 	background: pink;
 	-moz-box-shadow: 0px 0px 6px #666;
@@ -77,5 +82,10 @@ a.navText:hover {
 	box-shadow: 0px 0px 6px #666;
 	behavior: url();
 }
+#menu{
+	z-index: 
 }
-
+.ad_boxText{
+	color: #BE1E2D;
+	font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;	
+}
