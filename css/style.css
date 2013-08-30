@@ -9,11 +9,10 @@ body {
 }
 
 #top {
-	background-image: url("../images/inc_home_topbg.jpg");
-	/* background-color: #BE1E2D; */
-	/* background-size: 100%; */
-	height: 30px;
+	background-image: url("../images/inc_red_top.jpg");
 	background-repeat: repeat-x;
+	height: 100%;
+	height: 30px;
 }
 .navbar-default {
 	background-color: transparent;
@@ -37,20 +36,20 @@ a.textSigup:hover {
 }
 .navText {
 	color: red;
-	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font: 0.9em Arial, Helvetica, sans-serif;
 	margin-top: 4px;
 	text-decoration: none;
 	margin-left: -34px;
 }
 a.navText:link {
 	color: red;
-	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font: 0.9em Arial, Helvetica, sans-serif;
 	margin-top: 30px;
 	text-decoration: none;
 }
 a.navText:visited {
 	color: red;
-	font: 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font: 0.9em Arial, Helvetica, sans-serif;
 	margin-top: 30px;
 	text-decoration: none;
 }
@@ -61,11 +60,9 @@ a.navText:hover {
 	text-decoration: none;
 }
 #menuBg {
-	background-image: url("../images/inc_home_menubg.jpg");
+	background-image: url("../images/inc_menu_bg.jpg");
 	height: 77px;
-	/* background-size: 100%; */
 	background-repeat: repeat-x;
-	max-height: 77px;
 }
 .jumbotron {
 	background-color: white;
@@ -79,12 +76,9 @@ a.navText:hover {
 	background-color: #FFFFFF;
 }
 #mini_boxes {
-	/* float: right; */
-	margin: -45% 0% 0 0%;
-	/* display: block; */
-	/* position: relative; */
-	/* clear: both; */
-	padding-bottom: 10px;
+	margin: -40% 0% 0 0%;
+	padding-bottom: 15px;
+	z-index: 1000;
 }
 .ad_box {
 	border: 1px solid #A7A9AC;
@@ -105,8 +99,10 @@ a.navText:hover {
 }
 .ad_boxText {
 	color: #BE1E2D;
-	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 100%;
 	padding: 7px 0px 15px 12px;
+	font-weight: bold;
+	font-family: arial;
 }
 .coupons {
 
@@ -216,12 +212,10 @@ a.location_txt:hover {
 	float: right;
 	padding: 9px 10px;
 	margin-top: 19px;
-	margin-right: 15px;
 	margin-bottom: 9px;
-	background-color: transparent;
 	border: 1px solid rgba(207, 46, 46, 0);
 	border-radius: 4px;
-	margin-right: 22px;
+	margin-right: 12px;
 }
 @media (max-width: 1050px) {
 	.navbar-text {
@@ -243,17 +237,28 @@ a.location_txt:hover {
 	border-right-color: #ddd;
 	border-bottom-color: #ddd;
 }
-.navbar-default .navbar-toggle:hover {
-	background-color: #ddd;
+
+}
+@media (min-width: 768px) {
+	* {
+		font-size: 95%;
+	}
+}
+@media (max-width: 855px) {
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:link {
+		background-color: #f0f0f0;
+		padding: 2% 4% 2% 0%;
+		margin: 0% -4% 0% -4%;
+		text-align: right;
+	}
+}
+img {
+	width: 100%
+}
+@media (max-width: 403px) {
+	.navbar-brand > img {
+		width: 70%;
+		margin-top: -33%;
+	}
 }
 
-@media (min-width: 768px) {
-  .navbar-toggle {
-    display: inline-block;
-  }
-}
-@media (min-width: 855px) {
-  .navbar-toggle {
-    display: none;
-  }
-}
