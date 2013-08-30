@@ -75,6 +75,8 @@ a.navText:hover {
 #banner {
 	background-size: 100%;
 	margin-bottom: 0%;
+	width: 100%;
+	background-color: #FFFFFF;
 }
 #mini_boxes {
 	/* float: right; */
@@ -106,12 +108,10 @@ a.navText:hover {
 	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
 	padding: 7px 0px 15px 12px;
 }
-.coupons{
+.coupons {
 
 	margin-top: 20px;
-
 	padding: 0px 0px 0px 41px;
-
 }
 .footerColor {
 	background-color: grey;
@@ -195,7 +195,8 @@ a.location_txt:hover {
 	margin-left: 0px;
 }
 .navbar-text {
-	margin-top: 10px;
+	margin-top: 11px;
+	font-size: 17px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #BE1E2D;
@@ -218,16 +219,41 @@ a.location_txt:hover {
 	margin-right: 15px;
 	margin-bottom: 9px;
 	background-color: transparent;
-	border: 1px solid transparent;
+	border: 1px solid rgba(207, 46, 46, 0);
 	border-radius: 4px;
 	margin-right: 22px;
 }
-@media (min-width: 768px) {
+@media (max-width: 1050px) {
 	.navbar-text {
 		margin-right: 15px;
 		margin-left: 0px;
 	}
 	.nav > li > a {
-		padding: 13px 4px 0px 2px;
+		padding: 13px 5px 0px 5px;
+		margin-top: 3px;
 	}
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: rgba(107, 104, 104, 0.34);
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #ECE8E8;
+	background-color: #EEEEEE;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: inline-block;
+  }
+}
+@media (min-width: 855px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
