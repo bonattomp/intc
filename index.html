@@ -5,7 +5,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 		<script src="js/index.js" type="text/javascript" media="media screen and (max-width: 500px)" ></script>
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,14 +41,18 @@
 		</div>
 		<!-- banner -->
 		<div class="col-md-offset-1 col-md-10 col-sm-12 col-xm12 ">
-			<div id="banner"> </div>
-				<!--mini banner -->
-				<div class="row">
-					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8 col-xs-offset-4 col-xm-8">
-						<div id="mini_boxes"></div>
-					</div>
-				</div>
+			<div id="banner"></div>
+			<!-- mini banner -->
 			
+			<!-- this div is necessary because there's no col-xs-offset class on current bootstrap version -->
+			<div class="col-xs-4 visible-xs"></div>
+			
+			
+			<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8 col-xs-offset-4 col-xs-8">
+				<div id="mini_boxes"></div>
+			</div>
+			
+
 		</div>
 		<!--- content -->
 		<div class="row">
@@ -153,26 +157,13 @@
 		</div>
 		</div>
 		</div> -->
-		<!--- signature --->
-		<div class="row">
-			<div class="col-md-offset-1 col-md-10">
-				<div class="col-md-2">
-					<img src="images/red_bag_icon.png" class="img-responsive img-location"/>
-				</div>
-				<div class="col-md-10">
-					<ul class="copyright_txt">
-						<li>
-							© 2012 - 2013 International Clothiers Ltd.
-						</li>
-						<li>
-							Français | Privacy Policy
-						</li>
-					</ul>
-				</div>
+		<!--- footer --->
+		
+			<div class"row">
+				<div id="footer"></div>
 			</div>
-		</div>
-		<div id="footer_bg_color" class="row"></div>
-
+			
+		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->

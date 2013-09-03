@@ -99,10 +99,9 @@ a.navText:hover {
 }
 .ad_boxText {
 	color: #BE1E2D;
-	font-size: 100%;
-	padding: 7px 0px 15px 12px;
-	font-weight: bold;
 	font-family: arial;
+	font-size: 1.3em;
+	font-weight: bold;
 }
 .coupons {
 
@@ -124,11 +123,9 @@ height: 30%;
 	color: #6D6E71;
 	font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
-#footer_bg_color {
+#footer_color {
 	background-color: #D1D3D4;
-	/* max-height: 13%; */
-
-	margin: -60px 0 0;
+	height: 50px;
 }
 
 #location_border {
@@ -147,7 +144,7 @@ ul, li {
 }
 .img-location {
 	margin: 45px 0px 0px 0px;
-	/* height: auto; */
+	height: auto;
 }
 .footer_display {
 	display: inline-block;
@@ -252,13 +249,36 @@ a.location_txt:hover {
 		text-align: right;
 	}
 }
-img {
-	width: 100%
-}
 @media (max-width: 403px) {
 	.navbar-brand > img {
 		width: 70%;
-		margin-top: -33%;
+		margin-top: -23%;
 	}
 }
 
+body {
+	font-size: 100%;
+}
+.thumbnail {
+	border-radius: 0px 0px 0px 0px;
+	display: block;
+	height: auto;
+	line-height: 1.42857;
+	max-width: 100%;
+	padding: 0px;
+	transition: all 0.2s ease-in-out 0s;
+}
+@media (max-width: 480px) {
+	.thumbnail .caption {
+		padding: 5px 0px 0px 8px;
+		font-size: 90%;
+	}
+}
+@media (max-width: 320px) {
+	.thumbnail .caption {
+		padding: 2px 0px 0px 6px;
+		font-size: 80%;
+	
+		margin: 0px 0px -7px 0px;
+}
+}
