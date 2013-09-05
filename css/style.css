@@ -65,9 +65,10 @@ a.navText:hover {
 	background-repeat: repeat-x;
 }
 .jumbotron {
-	background-color: white;
-	min-height: 680px;
-	background-repeat: no-repeat;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
 }
 #banner {
 	background-size: 100%;
@@ -111,7 +112,7 @@ a.navText:hover {
 	text-decoration: underline;
 }
 .thumbnail .caption {
-    color: #BE1E2D;
+	color: #BE1E2D;
 }
 .coupons {
 	margin-top: 20px;
@@ -155,7 +156,7 @@ height: 30%;
 	color: #58595B;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 11px;
-	padding: 0 1px 0 10px;
+	padding: 0 0px 0 4px;
 	text-decoration: none;
 	margin-bottom: 0px;
 }

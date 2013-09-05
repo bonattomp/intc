@@ -1,0 +1,9 @@
+.item_boxes {
+	border: 1px solid #A7A9AC;
+}
+.item_text {
+	font: 100% Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding-bottom: 5px;
+	padding-left: 13px;
+	color: #939598;
+}
