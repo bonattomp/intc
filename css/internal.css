@@ -1,9 +1,39 @@
 .item_boxes {
-	border: 1px solid #A7A9AC;
+	border: 1px solid #DFDFDF;
+	float: inherit;
+	margin: 5px 0 10px;
 }
 .item_text {
-	font: 100% Verdana, Geneva, Arial, Helvetica, sans-serif;
-	padding-bottom: 5px;
-	padding-left: 13px;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #939598;
+	min-height: 41px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.item_boxes {
+	text-decoration: none;
+}
+.item_text {
+	text-decoration: none;
+}
+
+@media (max-width: 320px) {
+	.item_text {
+
+	}
+}
+@media (max-width: 480px) {
+	.boxes_responsive {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+		padding-left: 0px;
+	}
+
+	.item_boxes {
+
+	}
+	.item_text {
+		font-size: 9px;
+	}
+
 }
