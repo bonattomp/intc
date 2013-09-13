@@ -28,7 +28,7 @@ $(document).ready(function() {
 	});
 }); 
 $(document).ready(function() {
-	$.get("../../inc/coupons.html", function(data) {
+	$.get("../../inc/coupons_thumbnails.html", function(data) {
 		$("#coupons").html(data);
 	});
 }); 
