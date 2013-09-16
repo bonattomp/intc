@@ -223,7 +223,7 @@ a.location_txt:hover {
 	padding: 0px 5px;
 }
 .navbar-nav {
-	margin-left: 20px;
+	
 	margin-top: 30px;
 }
 .nav > li > a {
@@ -235,7 +235,6 @@ a.location_txt:hover {
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-top: 0;
-	padding: 0 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	
