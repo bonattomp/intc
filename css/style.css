@@ -223,8 +223,12 @@ a.location_txt:hover {
 }
 .navbar-nav {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	margin-top: 30px;
+=======
+	margin: 13px;
+>>>>>>> parent of 309f7e4... IE fixing menu
 =======
 	margin: 13px;
 >>>>>>> parent of 309f7e4... IE fixing menu
@@ -235,6 +239,7 @@ a.location_txt:hover {
 }
 .navbar-text {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 14px;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -242,6 +247,10 @@ a.location_txt:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 	
+=======
+	margin-top: 11px;
+	font-size: 17px;
+>>>>>>> parent of 309f7e4... IE fixing menu
 =======
 	margin-top: 11px;
 	font-size: 17px;
