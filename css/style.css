@@ -12,12 +12,12 @@ html, body {
 	margin-left: 0px;
 }
 #container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1024px;
+	min-height : 100%;
+	min-width: 100%;
+	position: relative;
 }
 #topMenu {
 	height: 30px;
@@ -81,18 +81,18 @@ a.textSingUp:hover {
 	width: 100%;
 }
 #banner {
-    background-color: #FFFFFF;
-    background-size: 100% auto;
-    margin-bottom: 0;
-    position: relative;
-    width: 100%;
+	background-color: #FFFFFF;
+	background-size: 100% auto;
+	margin-bottom: 0;
+	position: relative;
+	width: 100%;
 }
 
 #mini_boxes {
 	bottom: 0;
-    padding-bottom: 1px;
-    position: absolute;
-    z-index: 1000;
+	padding-bottom: 1px;
+	position: absolute;
+	z-index: 1;
 }
 .ad_box {
 	max-width: 203px;
@@ -105,7 +105,6 @@ a.textSingUp:hover {
 	position: relative;
 	zoom: 1;
 	behavior: url();
-	
 }
 #menu {
 	z-index: 1;
@@ -255,6 +254,7 @@ UL.navbar-nav {
 .navbar-default .navbar-text {
 	color: #BCBEC0;
 }
+
 .navbar-toggle {
 	position: relative;
 	float: right;
@@ -299,23 +299,41 @@ a.thumbnail:hover, a.thumbnail:focus {
 	.navbar-text {
 		margin-right: 15px;
 		margin-left: 0px;
-	}
-	.nav > li > a {
-		padding: 13px 5px 0px 5px;
-		margin-top: 3px;
+		padding: 0px 5px 0px 5px;
 	}
 }
 @media (max-width: 855px) {
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:link {
-		background-color: #f0f0f0;
-		padding: 2% 4% 2% 0%;
-		margin: 0% -4% 0% -4%;
-		text-align: right;
+		/*background-color: #f0f0f0;
+		 padding: 2% 4% 2% 0%;
+		 margin: 0% -4% 0% -4%;
+		 text-align: right;*/
 	}
 }
 @media (min-width: 768px) {
 	* {
 		font-size: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	.thumbnail .caption {
+		padding-left: 10px;
+		font-size: 100%;
+		margin: 0px 100px 0px 0px;
+		padding-bottom: 1px;
+	}
+}
+@media (max-width: 855px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #ABAFB3;
+		background-color: #E6E7E8;
+		z-index: 5000;
+	}
+}
+@media (min-width: 856px) and (max-width: 991px) {
+	.nav > li > a {
+		padding: 0px 15px 0px 0px;
 	}
 }
 
@@ -328,12 +346,24 @@ a.thumbnail:hover, a.thumbnail:focus {
 		box-shadow: 0px 0px 0px;
 	}
 	.thumbnail .caption {
-		padding: 5px 0px 0px 8px;
+		padding-left: 10px;
 		font-size: 70%;
+		margin: 0px 90px 0px 0px;
+		padding-bottom: 0px;
 	}
 	.style_phone {
 		margin-bottom: 15%;
 	}
+}
+@media (max-width: 479px) {
+	.thumbnail .caption {
+		padding-left: 10px;
+		font-size: 60%;
+		margin: 0px 30px -8px 0px;
+		padding-bottom: 0px;
+		padding-top: 4px;
+	}
+
 }
 @media (max-width: 403px) {
 	.navbar-brand > img {
@@ -348,10 +378,11 @@ a.thumbnail:hover, a.thumbnail:focus {
 }
 @media (max-width: 320px) {
 	.thumbnail .caption {
-		padding: 2px 0px 0px 6px;
-		font-size: 50%;
-		margin: 0px 0px -7px 0px;
-		left: 20%;
+		padding-left: 10px;
+		font-size: 60%;
+		margin: 0px 30px -8px 0px;
+		padding-bottom: 0px;
+		padding-top: 4px;
 	}
 	.footer_text {
 		left: 22%;

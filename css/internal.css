@@ -75,6 +75,9 @@ input {
 	float: right;
 	padding-right: 24%;
 }
+#new_arrivals_thumbnails{
+	margin-top: 0.5%;
+}
 
 /* Tablet Version */
 
