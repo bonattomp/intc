@@ -75,9 +75,63 @@ input {
 	float: right;
 	padding-right: 24%;
 }
-#new_arrivals_thumbnails{
+#new_arrivals_thumbnails {
 	margin-top: 0.5%;
 }
+#boys_submenu {
+	margin-left: -60px;
+	margin-top: 19px;
+	position: absolute;
+}
+#boys_submenu li {
+	border-bottom: 1px solid #E6E7E8;
+}
+
+.submenu_text {
+	color: #ADAFB1;
+	font: 1.1em 'Open Sans', sans-serif;
+	margin: 0 40px 0 0;
+	padding: 0 0 0 5px;
+}
+a.submenu_text:link {
+	color: #ADAFB1;
+	font: 1.1em 'Open Sans', sans-serif;
+	margin: 0 40px 0 0;
+	padding: 0 0 0 5px;
+}
+a.submenu_text:hover {
+	color: #535353;
+	text-decoration: none;
+}
+#locations_submenu {
+	margin-left: -60px;
+	margin-top: 19px;
+	position: absolute;
+}
+
+.submenu_locations_title {
+	color: #BE1E2D;
+	font: 2em 'Open Sans', sans-serif;
+	margin: 0 40px 0 0;
+	padding: 0 0 0 5px;
+}
+a.submenu_locations_txt {
+	color: #ADAFB1;
+	font: 1.3em 'Open Sans', sans-serif;
+	margin: 0 40px 0 0;
+	padding: 0 0 0 5px;
+}
+a.submenu_locations_txt:link {
+	text-decoration: none;
+	
+}
+a.submenu_locations_txt:hover {
+	color: #535353;
+	text-decoration: none;
+	
+}
+
+
 
 /* Tablet Version */
 

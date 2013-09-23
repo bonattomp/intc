@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$.get("menu.html", function(data) {
+	$.get("/inc/menu.html", function(data) {
 		$("#menu").html(data);
 	});
 }); 
@@ -17,13 +17,13 @@ $(document).ready(function() {
 }); 
 
 $(document).ready(function() {
-	$.get("location.html", function(data) {
-		$("#location").html(data);
+	$.get("find_your_store.html", function(data) {
+		$("#find_your_store").html(data);
 	});
 }); 
 
 $(document).ready(function() {
-	$.get("footer.html", function(data) {
+	$.get("/inc/footer.html", function(data) {
 		$("#footer").html(data);
 	});
 }); 
@@ -32,6 +32,8 @@ $(document).ready(function() {
 		$("#coupons").html(data);
 	});
 }); 
- 
-
- 
+$(document).ready(function() {
+	$.get("/inc/locations_submenu.html", function(data) {
+		$("#locations_submenu").html(data);
+	});
+}); 
