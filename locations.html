@@ -27,6 +27,37 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+	<?php function storeoutput($args=""){
+		$array = $args;
+		/* $addmap = str_replace(" #", "#", trim($array[4])); */
+		if (strstr($array[4], ",")):
+			$addmap = explode(",",$array[4]);
+			$addmap = trim($addmap[0]);
+		else:
+			$addmap = trim($array[4]);
+		endif;
+		$str=	"<strong>". trim($array[3])." - ".trim($array[1])." ".trim($array[2])."</strong><br /><a href='http://maps.google.ca/maps?client=safari&rls=en&oe=UTF-8&redir_esc=&q=".$addmap."%22,%22+".trim($array[5])."%22,%22".trim($array[6])."%22' target='_blank'>".trim($array[4])."</a><br />".trim($array[5]).", ".trim($array[6])." ".trim($array[7])."<br />".trim($array[8])."<br/><br/>";
+		echo $str;
+
+
+		
+		}
+		
+		 function storeoutput_city($args=""){
+		$array = $args;
+		if (strstr($array[4], ",")):
+			$addmap = explode(",",$array[4]);
+			$addmap = trim($addmap[0]);
+		else:
+			$addmap = trim($array[4]);
+		endif;
+		$str=	"<h2>".trim($array[5])."</h2><br/><strong>". trim($array[3])." - ".trim($array[1])." ".trim($array[2])."</strong><br /><a href='http://maps.google.ca/maps?client=safari&rls=en&oe=UTF-8&redir_esc=&q=".$addmap."%22,%22+".trim($array[5])."%22,%22".$array[6]."%22' target='_blank'>".trim($array[4])."</a><br />".trim($array[5]).", ".trim($array[6])." ".trim($array[7])."<br />".trim($array[8])."<br/><br/>";
+		echo $str;
+
+
+		
+		}
+		?>			
 		<div id="container">
 
 			<!-- Header -->
@@ -64,6 +95,12 @@
 			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
 				<div id="locations_list"></div>
 			</div>
+
+
+<?php $array = array("NOVA SCOTIA","Fairweather","Women's","Bedford Place Mall","1658 Bedford Highway","Bedford"," NS","B4A 2X9","866-288-9659");
+storeoutput_city($array);?>
+
+
 
 			<!-- Location -->
 			<div class="row">
