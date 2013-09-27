@@ -131,6 +131,42 @@ a.submenu_locations_txt:hover {
 	
 }
 
+/*locator style*/
+h1{
+	font-size: 36px;
+	color: #BE1E2D;
+	font-weight: bold;
+	font-family: verdana;
+}
+h2{
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	color: #6D6E71;
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	color: #6D6E71;
+}
+.location_box {
+	margin-top: 35%;
+}
+.location_txt {
+	color: #6D6E71;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+.location_txt a {
+	color: #BE1E2D;
+}
+.location_boys_txt {
+	color: #6D6E71;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	text-decoration: underline;
+}
 
 
 /* Tablet Version */

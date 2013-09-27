@@ -105,14 +105,11 @@
 			</div>
 
 			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-				<div>
+				<div class="location_box internal_text">
 					<?php
 					include 'stores.php';
 					?>
 				</div>
-				<p>
-					qualquer coisa
-				</p>
 			</div>
 
 			<!-- Find your Store -->
