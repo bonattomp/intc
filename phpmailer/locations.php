@@ -89,7 +89,7 @@
 									<a href="#Quebec" class="submenu_locations_txt">Quebec</a>
 								</li>
 								<li>
-									<a href="#Saskatchewan" class="submenu_locations_txt">Saskatchewam</a>
+									<a href="#Saskatchewan" class="submenu_locations_txt">Saskatchewan</a>
 								</li>
 							</ul>
 						</div>
@@ -105,11 +105,14 @@
 			</div>
 
 			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-				<div class="location_box internal_text">
+				<div>
 					<?php
-					include 'stores.php';
+					include 'storeres.php';
 					?>
 				</div>
+				<p>
+					qualquer coisa
+				</p>
 			</div>
 
 			<!-- Find your Store -->

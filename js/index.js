@@ -1,8 +1,46 @@
 $(document).ready(function() {
-	$.get("menu.html", function(data) {
+  	var fullLocation = location.protocol + "//" + location.host+ "/inc";
+	$.get(fullLocation + "/menu.html", function(data) {
 		$("#menu").html(data);
+		$("#menu ul.nav a").each(function() {
+			$(this).attr("href", fullLocation + "/" + $(this).attr("href"));
+		});
+	});
+ 
+	$.get(fullLocation + "/banner.html", function(data) {
+		$("#banner").html(data);
+	});
+ 
+	$.get(fullLocation + "/mini_boxes.html", function(data) {
+		$("#mini_boxes").html(data);
+	});
+ 
+	$.get(fullLocation + "/find_your_store.html", function(data) {
+		$("#find_your_store").html(data);
+	});
+ 
+	$.get(fullLocation + "/footer.html", function(data) {
+		$("#footer").html(data);
+	});
+ 
+	$.get(fullLocation + "/coupons_thumbnails.html", function(data) {
+		$("#coupons").html(data);
+	});
+ 
+	$.get(fullLocation + "/locations_submenu.html", function(data) {
+		$("#locations_submenu").html(data);
 	});
 }); 
+
+
+
+
+/*
+// $(document).ready(function() {
+	// $.get("menu.html", function(data) {
+		// $("#menu").html(data);
+	// });
+// }); 
 
 $(document).ready(function() {
 	$.get("banner.html", function(data) {
@@ -32,8 +70,20 @@ $(document).ready(function() {
 		$("#coupons").html(data);
 	});
 }); 
+
+// $(document).ready(function() {
+	// $.get("locations_submenu.html", function(data) {
+		// $("#locations_submenu").html(data);
+	// });
+// }); 
+
+
 $(document).ready(function() {
-	$.get("locations_submenu.html", function(data) {
-		$("#locations_submenu").html(data);
+	alert(location.protocol + "//" + location.host + "/inc/menu.html");
+	$.get("http://localhost/inc/menu.html", function(data) {
+		$("#menu").html(data);
 	});
-}); 
+});*/
+
+
+

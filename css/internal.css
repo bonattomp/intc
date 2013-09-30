@@ -123,22 +123,34 @@ a.submenu_locations_txt {
 }
 a.submenu_locations_txt:link {
 	text-decoration: none;
-	
 }
 a.submenu_locations_txt:hover {
 	color: #535353;
 	text-decoration: none;
-	
 }
 
-/*locator style*/
-h1{
+.boys_submenu_xs {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #E6E7E8;
+    color: #ADAFB1;
+    font: 0.5em 'Open Sans',sans-serif;
+    margin-top: 0;
+    padding: 6px 0 5px 10px;
+}
+.boys_submenu_xs_position {
+    margin-left: -84px;
+    margin-top: 10px;
+}
+
+
+/*locations style*/
+h1 {
 	font-size: 36px;
 	color: #BE1E2D;
 	font-weight: bold;
 	font-family: verdana;
 }
-h2{
+h2 {
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif;
 	color: #6D6E71;
@@ -167,7 +179,18 @@ strong {
 	font-size: 1em;
 	text-decoration: underline;
 }
-
+.nav-open, .nav-close {
+	display: none;
+	color: #333;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 50px;
+	letter-spacing: 1px;
+	background: #060608;
+}
 
 /* Tablet Version */
 
@@ -205,5 +228,12 @@ strong {
 	}
 	.internal_text {
 		font-size: 1em;
+	}
+	#boys_submenu{
+		display: none;
+	}
+	.nav-open {
+		display: block;
+		text-align: center;
 	}
 }
