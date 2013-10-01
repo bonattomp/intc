@@ -14,25 +14,23 @@
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-		<script src="/inc/js/html5shiv.js"></script>
-		<script src="/inc/js/respond.min.js"></script>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
 		<!-- Custom styles for this template -->
-		<link href="navbar.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/internal.css">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-
 		<div id="container">
-
+			
 			<!-- Header -->
 			<div class="row">
-				<div class="col-md-offset-8 col-md-3">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div id="topMenu">
 						<a href="#" class="textSingUp"> SING UP </a>
 					</div>
@@ -41,7 +39,7 @@
 
 			<!-- Menu -->
 			<div class="row">
-				<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-xs-12">
 					<div id="menuBg">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div id="menu" ></div>
@@ -114,7 +112,7 @@
 
 			<!-- Find your Store -->
 			<div class="row">
-				<div class="col-md-offset-1 col-md-10 col-sm-12">
+				<div class="col-md-12 col-md-12 col-sm-12">
 					<div id="find_your_store"></div>
 				</div>
 			</div>
@@ -123,6 +121,7 @@
 				<div id="footer" class="footer_bottom"></div>
 			</div>
 		</div>
+		<div class="footer_bg_color"></div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,8 +1,15 @@
 $(document).ready(function() {
-  	var fullLocation = location.protocol + "//" + location.host+ "/inc";
+  	var fullLocation = location.protocol + "//" + location.host;
 	$.get(fullLocation + "/menu.html", function(data) {
 		$("#menu").html(data);
 		$("#menu ul.nav a").each(function() {
+			$(this).attr("href", fullLocation + "/" + $(this).attr("href"));
+		});
+	});
+	
+	$.get(fullLocation + "/footer.html", function(data) {
+		$("#footer").html(data);
+		$("#footer").each(function() {
 			$(this).attr("href", fullLocation + "/" + $(this).attr("href"));
 		});
 	});
@@ -19,9 +26,9 @@ $(document).ready(function() {
 		$("#find_your_store").html(data);
 	});
  
-	$.get(fullLocation + "/footer.html", function(data) {
-		$("#footer").html(data);
-	});
+	// $.get(fullLocation + "/footer.html", function(data) {
+		// $("#footer").html(data);
+	// });
  
 	$.get(fullLocation + "/coupons_thumbnails.html", function(data) {
 		$("#coupons").html(data);
