@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 }); 
 $(document).ready(function() {
-	$.get("../../category/boys_submenu_xs.html", function(data) {
+	$.get("../../category/boys_submenu.html", function(data) {
 		$("#boys_submenu_xs").html(data);
 	});
 }); 

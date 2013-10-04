@@ -9,7 +9,7 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-		<script src="js/index.js" type="text/javascript" media="media screen and (max-width: 500px)" ></script>
+		<script src="js/main.js"  type="text/javascript" media="media screen and (max-width: 500px)" ></script>
 		<script src="js/internal.js" type="text/javascript" media="media screen and (max-width: 500px)" ></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

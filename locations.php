@@ -9,7 +9,7 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-		<script src="js/index.js" type="text/javascript" media="media screen and (max-width: 500px)" ></script>
+		<script src="js/main.js"  type="text/javascript" media="media screen and (max-width: 500px)" ></script>
 		<script src="js/internal.js" type="text/javascript" media="media screen and (max-width: 500px)" ></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,7 +49,7 @@
 			</div>
 
 			<!-- Locations jumbotron and Menu -->
-			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="jumbotron">
 					<div class="col-md-2">
 						<div id="locations_submenu">
@@ -98,11 +98,10 @@
 			</div>
 
 			<!-- Location list -->
-			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+			<!-- <div class="col-lg-12 col-md-12 col-sm-12">
 				<div id="locations_list"></div>
-			</div>
-
-			<div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+			</div> -->
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="location_box internal_text">
 					<?php
 					include 'stores.php';
@@ -110,12 +109,7 @@
 				</div>
 			</div>
 
-			<!-- Find your Store -->
-			<div class="row">
-				<div class="col-md-12 col-md-12 col-sm-12">
-					<div id="find_your_store"></div>
-				</div>
-			</div>
+
 			<!-- Footer -->
 			<div class="row">
 				<div id="footer" class="footer_bottom"></div>

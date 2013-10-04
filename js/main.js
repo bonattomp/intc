@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  	var fullLocation = location.protocol + "//" + location.host;
+  	var fullLocation = location.protocol + "//" + location.host + "/test_site/v2";
 	$.get(fullLocation + "/menu.html", function(data) {
 		$("#menu").html(data);
 		$("#menu ul.nav a").each(function() {
