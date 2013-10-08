@@ -78,6 +78,7 @@ a.textSingUp:hover {
 	padding-bottom: 0;
 	padding-top: 0;
 	width: 100%;
+	font: 1.2em 'Open Sans', sans-serif;
 }
 #banner {
 	background-color: #FFFFFF;
@@ -318,7 +319,7 @@ a.thumbnail:hover, a.thumbnail:focus {
 }
 @media (min-width: 768px) {
 	* {
-		font-size: 12px;
+		/*font-size: 12px;*/
 	}
 }
 
